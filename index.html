@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>María Aguilera - Developer</title>
+    <meta
+      name="description"
+      content="Building interactive web experiences with clean code and thoughtful design."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="María Aguilera - Developer" />
+    <meta
+      property="og:description"
+      content="Building interactive web experiences with clean code and thoughtful design."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="María Aguilera - Developer" />
+    <meta
+      name="twitter:description"
+      content="Building interactive web experiences with clean code and thoughtful design."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#dfd1bc" />
+  </head>
+  <body class="is-loading">
+    <div class="preloader">
+      <span class="preloader-mark">MA</span>
+    </div>
+
+    <header class="site-header">
+      <a class="mark" href="#top">
+        <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+          <polygon points="20,3 35,12 35,28 20,37 5,28 5,12" fill="none" stroke="currentColor" stroke-width="2" />
+          <text x="20" y="25" text-anchor="middle" font-size="13" fill="currentColor" font-family="Urbanist, sans-serif" font-weight="700">MA</text>
+        </svg>
+      </a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div id="scene-backdrop"></div>
+    <canvas id="webgl-scene"></canvas>
+
+    <main id="top">
+      <div class="story" id="story">
+        <section id="hero" class="story-panel hero">
+          <div class="hero-content">
+            <span class="badge reveal">Developer</span>
+            <h1 class="reveal">María Aguilera</h1>
+            <p class="hero-tagline reveal">
+              Building interactive web experiences with clean code and thoughtful design.
+            </p>
+            <a class="cta reveal" href="#work">See my work</a>
+          </div>
+          <div class="scroll-hint reveal">
+            <span>Scroll</span>
+          </div>
+        </section>
+
+        <section id="about" class="story-panel about">
+          <div class="info-card location-card reveal">
+            <span class="label">Based in</span>
+            <strong>María</strong>
+            <span>Your City</span>
+          </div>
+          <div class="info-card bio-card reveal">
+            <span class="label">Focus</span>
+            <p>Builds clean, interactive web experiences that are fast, accessible, and fun to use.</p>
+          </div>
+          <ul class="skills">
+            <li class="reveal">JavaScript / TypeScript</li>
+            <li class="reveal">Three.js</li>
+            <li class="reveal">UI / UX</li>
+            <li class="reveal">Web Design</li>
+          </ul>
+        </section>
+      </div>
+
+      <section id="work" class="section work">
+        <h2 class="reveal">Selected Work</h2>
+        <div class="work-grid">
+          <article class="work-item reveal">
+            <div class="work-thumb" data-tint="1"></div>
+            <h3>Project One</h3>
+            <p>Placeholder — swap in a real case study.</p>
+          </article>
+          <article class="work-item reveal">
+            <div class="work-thumb" data-tint="2"></div>
+            <h3>Project Two</h3>
+            <p>Placeholder — swap in a real case study.</p>
+          </article>
+          <article class="work-item reveal">
+            <div class="work-thumb" data-tint="3"></div>
+            <h3>Project Three</h3>
+            <p>Placeholder — swap in a real case study.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="reveal">Let's talk</h2>
+        <p class="reveal">
+          Have a project in mind? <a href="mailto:hello@example.com">hello@example.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> María Aguilera</span>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
