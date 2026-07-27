@@ -14,7 +14,7 @@ const MONITOR_SCREEN = 0x3a6ea5
 const CHAIR = 0xffffff
 const PLANT_POT = 0xb5651d
 const PLANT_LEAF = 0x4c8c5a
-const RUG = 0xe08a3c
+const RUG = 0x8b5cf6
 const GLOW = 0x4fd7ff
 
 function makeGlowTexture(): THREE.Texture {
@@ -327,6 +327,8 @@ export async function initScene(canvas: HTMLCanvasElement) {
     character.root.position.x = THREE.MathUtils.lerp(deskOffset.x - 0.15, 0, standT)
     character.root.position.z = THREE.MathUtils.lerp(deskOffset.z + 0.32, 0, standT)
     character.root.scale.setScalar(THREE.MathUtils.lerp(1, 1.25, standT))
+    // Faces the monitor while seated (180°), turns to face forward once standing.
+    character.root.rotation.y = THREE.MathUtils.lerp(Math.PI, 0, standT)
 
     // Camera follows the same arc as the character, slightly ahead of it.
     const camT = THREE.MathUtils.smoothstep(clamped, 0.1, 0.72)
